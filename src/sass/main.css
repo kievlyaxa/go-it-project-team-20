@@ -356,7 +356,15 @@ body {
   text-align: center;
 }
 
+.footer-page {
+  background-color: #FF6B09;
+}
+
 .footer-page .footer-button {
   background-color: #FF6B09;
+}
+
+.footer-page .footer-icon {
+  fill: #FF6B09;
 }
 /*# sourceMappingURL=main.css.map */
