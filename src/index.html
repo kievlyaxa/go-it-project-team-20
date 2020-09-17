@@ -10,6 +10,12 @@
     <title>Адский английский</title>
   </head>
   <body>
+     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/page-footer.html"></include>
+    <include src="./partials/how-we-do-it.html"></include>
+    
+    <!-- Подвал -->
     <footer class="footer-page">
       <section class="footer-section overlay">
         <h2 class="footer-title">Регистрация на <span class="orange">бесплатную</span><br/>телефонную <span class="orange">консультацию</span>по нюансам<br/>ЗНО по английскому языку</h2>
@@ -46,10 +52,7 @@
         <p class="guard">@ Все права защищены, 2019</p>
       </section>
     </footer> 
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/page-footer.html"></include>
-
+   
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
