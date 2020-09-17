@@ -2,16 +2,27 @@
     background-color: #E5E5E5;
     width: 1680px;
 
-    .footer-icon {
-        fill:black;
+    .logo {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .orange {
+        color: #FF6B09;
     }
 }
 
 .footer-section {
-    &.overlay{
+    &.overlay
+        {
+        display: inline-block;
+        text-align: center;
         width: 1680px;
-        height: 840px;
-        background-image:  
+        background-color: #111518;
+    
+        padding-top: 100px;
+        padding-bottom: 62px;
+        background-image: 
         url("../images/footeroverlay.jpg");
         
         .footer-button {
@@ -32,7 +43,6 @@
             font-size: 46px;
             line-height: 130%;
 
-            width: 1090px;
             text-align: center;
             letter-spacing: 0.03em;
 
@@ -41,8 +51,6 @@
             margin: 0;
         }
         .footer-info {
-            width: 1090px;
-
             font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
@@ -56,8 +64,40 @@
             margin: 0;
             margin-top: 50px;
         }
-        .footer-inputs {
-            display: block;
+
+    }
+    &.second {
+        display: inline-flex;
+        align-items: center;
+
+        padding-right: 180px;
+        padding-left: 180px;
+
+        height: 150px;
+
+        background-color: #E5E5E5;
+    }
+
+    &.third {
+        background-color: #111518;
+
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 180px;
+        padding-bottom: 20px;
+
+
+        .guard {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+
+            align-items: center;
+
+            color: #B9B9B9;
+            margin: 0;
         }
     }
 }
@@ -77,4 +117,87 @@
 
         color: #FFFFFF;
     }
+}
+
+.logo {
+    
+    .link {
+        text-decoration: none;
+    }
+    
+    .parts {
+        display: flex;
+        align-items: center;
+
+        .footer-icon {
+            fill:#FF6B09;
+            width: 22px;
+            height: 30px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        .logo-part {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 26px;
+            letter-spacing: 0.04em;
+    
+            color: #111518;
+    
+            margin: 0;
+        }
+    }
+
+    .logo-part-scnd {
+        width: 125px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin: 0;
+
+        color: #111518;
+    }
+}
+
+.footer-section.second {
+    .footer-telephone{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        color: #111518;
+
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .footer-telephone::before {
+        content: '';
+        background-image: url("/src/images/phone.png");
+    }
+    .footer-telephone::after {
+        content: '';
+        background-image: url("/src/images/v.png");
+    }
+}
+
+.footer-checkbox {
+    display: block;  
+    .input {
+        width: 478px;
+        height: 70px; 
+        border: 1px solid #FFFFFF;
+        background-color: none;
+    }      
 }
