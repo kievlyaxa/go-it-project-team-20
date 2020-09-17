@@ -5,15 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./sass/main.css">
     <title>Адский английский</title>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/hero.html"></include>
+    <include src="./partials/page-footer.html"></include>
     <include src="./partials/how-we-do-it.html"></include>
-
+    
+    <!-- Подвал -->
+    <footer class="footer-page">
+      <section class="footer-section overlay">
+        <h2 class="footer-title">Регистрация на <span class="orange">бесплатную</span><br/>телефонную <span class="orange">консультацию</span>по нюансам<br/>ЗНО по английскому языку</h2>
+        <p class="footer-info">Оставь заявку на участие в <span class="orange">бесплатном занятии.</span><br/>С вами свяжется консультант и ответит на вопросы</p>
+        <div class="footer-checkbox" role="group">
+          <p class="frst-input"><input class="input" type="text" placeholder="*Имя"></p>
+          <p class="scnd-input"><input class="input" type="tel" placeholder="*Телефон"></p>
+        </div>
+        <button class="footer-button">
+          <span class="button-text">хочу на бесплатное занятие</span>
+        </button>
+      </section>
+      <section class="footer-section second">
+        <div class="logo">
+          <a class="link" href="">
+            <div class="parts">
+              <span class="logo-part">Hell</span>
+              <svg class="footer-icon">
+                  <use href="./images/sprite.svg#fire"></use>
+              </svg>
+              <span class="logo-part">EN</span>
+            </div>
+            <span class="logo-part-scnd"> <span class="orange">Адский</span>английский</span>
+          </a>
+        </div>
+        <div class="footer-phone">
+          <img src="/src/images/phone.png" alt="phon">
+          <p class="footer-telephone">+38 (000) 000 00 00</p>
+          <img src="/src/images/v.png" alt="#">
+          <img class="footer-inst" src="/src/images/instagram.png" alt="instagram">
+        </div>
+      </section>
+      <section class="footer-section third">
+        <p class="guard">@ Все права защищены, 2019</p>
+      </section>
+    </footer> 
+   
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
