@@ -3,6 +3,14 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1314px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 // главное заглавие сайта (h1)
 .main-title {
   font-size: 58px;
@@ -21,7 +29,7 @@ body {
   }
 }
 
-//  Залавия секций (h2)
+//  Заглавия секций (h2)
 .section-title {
   font-weight: 800;
   font-size: 46px;
@@ -37,7 +45,7 @@ body {
   }
 }
 
-//  Залавия items (h3)
+//  Заглавия items (h3)
 .item-title {
   font-weight: 700;
   font-size: 20px;
@@ -62,3 +70,6 @@ body {
     line-height: 1.67;
   }
 }
+
+
+

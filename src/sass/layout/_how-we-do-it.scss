@@ -1,0 +1,54 @@
+.hwdit-title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  letter-spacing: 0.03em;
+
+  color: $primary-title-color;
+}
+
+.hwdit-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.hwdit-list-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+
+  color: $primary-title-color;
+}
+
+.hwdit-list-item {
+  list-style: none;
+  width: calc((100% - 40px) / 3);
+}
+
+.hwdit-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5555555;
+  letter-spacing: 0.08em;
+
+  color: $primary-text-color;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.hwdit-icon {
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+  fill: $accent-color;
+}
