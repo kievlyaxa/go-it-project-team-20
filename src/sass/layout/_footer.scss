@@ -1,10 +1,80 @@
 .footer-page {
-    background-color: #FF6B09;
-    
-    .footer-button {
-        background-color: #FF6B09;
-    }
+    background-color: #E5E5E5;
+    width: 1680px;
+
     .footer-icon {
-        fill: #FF6B09;
+        fill:black;
+    }
+}
+
+.footer-section {
+    &.overlay{
+        width: 1680px;
+        height: 840px;
+        background-image:  
+        url("../images/footeroverlay.jpg");
+        
+        .footer-button {
+            background-color: #FF6B09;
+            color: #FFFFFF;
+            border: 0;
+    
+            width: 354px;
+            height: 70px;
+    
+            margin: 0;
+            padding: 25px;
+        }
+        .footer-title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 130%;
+
+            width: 1090px;
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            color: #FFFFFF;
+
+            margin: 0;
+        }
+        .footer-info {
+            width: 1090px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 0.08em;
+
+            color: #FFFFFF;
+
+            margin: 0;
+            margin-top: 50px;
+        }
+        .footer-inputs {
+            display: block;
+        }
+    }
+}
+
+.footer-button {
+    .button-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
     }
 }
