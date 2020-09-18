@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\w537QF43\\Documents\\GitHub\\go-it-project-team-20\\src\\images\\png\\footer-desktop.png":[["footer-desktop.d7514fbf.png","images/png/footer-desktop.png"],"images/png/footer-desktop.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"C:\\Users\\w537QF43\\Documents\\GitHub\\go-it-project-team-20\\src\\images\\png\\black-fire-desktop.png":[["black-fire-desktop.59a38ea6.png","images/png/black-fire-desktop.png"],"images/png/black-fire-desktop.png"],"C:\\Users\\w537QF43\\Documents\\GitHub\\go-it-project-team-20\\src\\images\\png\\footer-desktop.png":[["footer-desktop.d7514fbf.png","images/png/footer-desktop.png"],"images/png/footer-desktop.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50218" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62685" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
