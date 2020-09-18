@@ -348,11 +348,9 @@ body {
 }
 
 .container {
-  width: 1314px;
+  width: 1344px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .main-title {
@@ -498,6 +496,17 @@ body {
   margin-bottom: 0px;
 }
 
+.hwdit {
+  margin-bottom: 130px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-list {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .hwdit-title {
   font-weight: 800;
   font-size: 46px;
@@ -506,6 +515,7 @@ body {
   margin-bottom: 50px;
   letter-spacing: 0.03em;
   color: #111518;
+  padding-left: 15px;
 }
 
 .hwdit-list {
@@ -522,12 +532,37 @@ body {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.08em;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #111518;
 }
 
 .hwdit-list-item {
   list-style: none;
   width: calc((100% - 40px) / 3);
+  background: #ffffff;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.hwdit-list-item:hover,
+.hwdit-list-item:focus {
+  background-color: #ff6b09;
+}
+
+.hwdit-list-item:hover *,
+.hwdit-list-item:focus * {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.hwdit-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.hwdit-list-item:nth-child(n+4) {
+  margin-bottom: 0;
 }
 
 .hwdit-text {
@@ -537,6 +572,8 @@ body {
   line-height: 1.5555555;
   letter-spacing: 0.08em;
   color: #b9b9b9;
+  margin-top: 0;
+  margin-bottom: 55px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -545,7 +582,19 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
   fill: #ff6b09;
+}
+
+.hwdit-dash {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 164.9%;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
 }
 
 .footer-page {
