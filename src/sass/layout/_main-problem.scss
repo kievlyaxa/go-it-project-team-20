@@ -1,0 +1,72 @@
+.main-problem-section {
+  background-color: $primary-title-color;
+  max-width: 1680px;
+  height: 560px;
+  position: relative;
+  background-image: url('/images/png/black-fire-desktop.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-bottom: 176px;
+  margin-right: auto;
+  margin-left: auto;
+  & .container {
+    height: 710px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.main-problem-header {
+  max-width: 860px;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  & span {
+    color: $accent-color;
+  }
+}
+.problems-solve {
+  background-color: white;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.problems-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 110px;
+  & li {
+    padding-top: 70px;
+    padding-bottom: 62px;
+    width: calc((100% - 80px) / 3);
+    width: 336px;
+    margin-right: 40px;
+    &:nth-last-child(-n + 3) {
+      padding-top: 0px;
+      margin-bottom: 0px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+    & h3 {
+      color: $accent-color;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 164.9%;
+      letter-spacing: 0.08em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    & p {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+}
