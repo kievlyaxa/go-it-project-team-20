@@ -1,0 +1,33 @@
+.guarantee{
+    padding-bottom: 130px;
+    background-color: #F1F1F1;
+}
+
+
+
+.guarantee-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color:$primary-title-color;
+}
+
+.guarantee-description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3D3D3D;
+    margin: 0;
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+   
+
+}
