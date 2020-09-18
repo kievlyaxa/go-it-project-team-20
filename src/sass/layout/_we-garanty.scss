@@ -17,6 +17,8 @@
     color:$primary-title-color;
 }
 
+
+
 .guarantee-description{
     font-style: normal;
     font-weight: 500;
@@ -30,4 +32,16 @@
     }
    
 
+}
+
+.guarantee-description::before{
+    display: block;
+    content: "";
+    width: 22px;
+    
+
+}
+
+.text-decor{
+    color: $accent-color ;
 }
