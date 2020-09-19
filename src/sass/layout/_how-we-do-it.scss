@@ -1,3 +1,13 @@
+.container.media {
+  @media screen and (max-width: 1199px) {
+    width: calc(688px + 30px);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: calc(280px + 30px);
+  }
+}
+
 .hwdit {
   margin-bottom: 130px;
   padding-left: 15px;
@@ -16,12 +26,15 @@
     font-size: 20px;
     margin-bottom: 30px;
     padding: 0;
+    width: 100%;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 30px;
     padding: 0;
+    width: 688px;
   }
 
   @media screen and (min-width: 1344px) {
@@ -33,11 +46,15 @@
 }
 
 .hwdit-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: block;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: 1344px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .hwdit-list-title {
@@ -53,13 +70,31 @@
 }
 
 .hwdit-list-item {
+  display: block;
   list-style: none;
-  width: calc((100% - 40px) / 3);
+
   background: #ffffff;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
+
   margin-bottom: 20px;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: width 1343px) {
+    display: block;
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (max-width: width 767px) {
+    display: block;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: calc((100% - 40px) / 3);
+    margin-right: 20px;
+  }
 }
 
 .hwdit-list-item:hover,
