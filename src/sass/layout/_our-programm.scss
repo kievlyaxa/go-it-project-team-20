@@ -10,7 +10,7 @@
             #fff $limit,
             #fff 100%);
     background-repeat: no-repeat, repeat;
-    background-position: 0px 676px, 0 0;
+    background-position: calc(50% - 504px) 676px, 0 0;
 
     *,
     *::before,
