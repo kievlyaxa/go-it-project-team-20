@@ -1,6 +1,12 @@
 .hero {
   padding-bottom: 50px;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 1344px) {
+    padding-bottom: 130px;
+    background-image: url(../images/hero-background.svg);
+    background-position: 50% -255px;
+  }
 }
 
 .hero-container {
@@ -15,6 +21,7 @@
     width: 768px;
     position: relative;
     padding-left: 40px;
+
     padding-right: 40px;
   }
 
