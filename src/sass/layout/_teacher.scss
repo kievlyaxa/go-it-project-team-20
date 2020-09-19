@@ -42,15 +42,16 @@
 .teacher-experience{
     margin-top: 30px;
     margin-bottom: 63px;
+    padding: 0px;
 }
 
-.teacher-experience::after{
+.teacher-description::before{
     position: absolute;
     content: "";
     display: block;
     border: 1px solid $accent-color;
     width: 20px;
-    top: 250px;
+    top: 240px;
     left: 560px;
 }
 
@@ -66,6 +67,7 @@
 
 
 .teacher-experience .item{
+    display: flex;
     list-style: none;
     font-style: normal;
     font-weight: 600;
@@ -80,13 +82,7 @@
    
 }
 
-.teacher-experience .item::before{
-    content: "";
-    display: inline-flex;
-    height: 20px;
-    width: 25px;
-    
-}
+
 
 .teacher-description{
     margin-top: 0px;
@@ -104,4 +100,10 @@
     &:focus{
         color:$accent-color ;
     }
+}
+
+.galka{
+    margin-right: 35px;
+    fill: $accent-color;
+    
 }
