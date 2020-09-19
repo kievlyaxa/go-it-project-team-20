@@ -39,22 +39,22 @@
   // position: relative;
 }
 
-.teacher-experience {
-  margin-top: 30px;
-  margin-bottom: 63px;
+.teacher-experience{
+    margin-top: 30px;
+    margin-bottom: 63px;
+    padding: 0px;
 }
 
-.teacher-experience::after {
-  position: absolute;
-  content: '';
-  display: block;
-  border: 1px solid $accent-color;
-  width: 20px;
-  top: 250px;
-  left: 560px;
-}
-
-.teacher-name::after {
+.teacher-description::before{
+    position: absolute;
+    content: "";
+    display: block;
+    border: 1px solid $accent-color;
+    width: 20px;
+    top: 240px;
+    left: 560px;
+ 
+  .teacher-name::after {
   position: absolute;
   content: '';
   display: block;
@@ -63,28 +63,21 @@
   width: 55%;
   border: 1px solid #b9b9b9;
 }
-
-.teacher-experience .item {
-  list-style: none;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.06em;
-  color: $primary-title-color;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-.teacher-experience .item::before {
-  content: '';
-  display: inline-flex;
-  height: 20px;
-  width: 25px;
-}
-
-.teacher-description {
+  
+.teacher-experience .item{
+    display: flex;
+    list-style: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    color:$primary-title-color;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+  
+  .teacher-description {
   margin-top: 0px;
   margin-bottom: 20px;
   font-style: normal;
@@ -94,10 +87,16 @@
   color: $primary-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-Certificate {
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
+  
+  .link-Certificate{
+    &:hover,
+    &:focus{
+        color:$accent-color ;
+    }
+    
+  .galka{
+    margin-right: 35px;
+    fill: $accent-color;
+    
+}  
+  
