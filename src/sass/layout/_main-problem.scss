@@ -1,6 +1,6 @@
 .main-problem-section {
   background-color: $primary-title-color;
-  max-width: 1680px;
+  //width: 1680px;
   height: 560px;
   position: relative;
   background-image: url('/images/png/black-fire-desktop.png');
@@ -10,15 +10,17 @@
   margin-right: auto;
   margin-left: auto;
   & .container {
-    //height: 710px;
+    height: 710px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   @media screen and (max-width: 1199px) {
     height: 340px;
     background-image: none;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     height: 545px;
   }
 }
@@ -123,13 +125,16 @@
       margin-bottom: 0px;
       @media screen and (max-width: 1199px) {
         line-height: 24px;
+        font-size: 14px;
       }
     }
     & p {
+      font-size: 20px;
+      font-weight: 700;
       margin-top: 10px;
       margin-bottom: 0px;
-      font-weight: 600;
       @media screen and (max-width: 1199px) {
+        font-size: 14px;
         margin-top: 5px;
       }
     }
