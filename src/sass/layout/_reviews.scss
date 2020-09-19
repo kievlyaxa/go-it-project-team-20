@@ -1,0 +1,140 @@
+
+.reviews{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.section-title.reviews{
+    padding-top: 130px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.reviews-list{
+    display:flex;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.reviews-item{
+    display:flex;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.item-title.tonya{
+    display: block;
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.08em;
+    color: #FF6B09;
+}
+
+.reviews-item.first{
+    position: relative;
+    display: flex;
+    width: 1090px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    flex-grow: inherit;
+    text-align: start;
+    background: #FFFFFF;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.text-profession{
+    display: block;
+    width: 438px;
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    white-space: wrap;
+
+    color: #B9B9B9;
+}
+
+.text-reviews{
+    display: block;
+    width: 706px;
+    margin-top: 20px;
+    margin-right: 112px;
+    margin-bottom: 51px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: wrap;
+
+    color: #3D3D3D;
+}
+
+.information{
+    display: block;
+}
+
+.foto-reviews-first{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 82px;
+    margin-right: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+// .foto-reviews-first::after{
+//     content: "";
+//     display: block;
+//     width: 25px;
+//     background-image: url(../images/vk.svg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.foto-reviews{
+    display: block;
+    border-radius: 50%;
+}
+
+.reviews-item.first::before{
+    content: "";
+    display: block;
+    width: 25px;
+    background-image: url(../images/Arrow1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+.reviews-item.first::after{
+    content: "";
+    display: block;
+    width: 25px;
+    background-image: url(../images/sprite.svg#Arrow2);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.continuation:hover{
+    text-decoration: underline;
+    color: $accent-color;
+}
+
+.icon-vk{
+    margin-left: 142px;
+    margin-top: 27px;
+    fill:#436eab;
+}
