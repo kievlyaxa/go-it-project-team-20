@@ -725,6 +725,13 @@ body {
   padding-bottom: 50px;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1344px) {
+  .hero {
+    padding-bottom: 130px;
+    background-image: url(/hero-background.102dcfd9.svg);
+    background-position: 50% -255px;
+  }
+}
 
 .hero-container {
   display: block;
