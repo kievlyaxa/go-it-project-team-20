@@ -37,6 +37,14 @@
   }
 }
 
+.header-menu {
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    display: flex;
+    justify-content: space-between;
+    width: 627px;
+  }
+}
+
 .logo.kostyl {
   @media screen and (min-width: 1344px) {
     display: none;
