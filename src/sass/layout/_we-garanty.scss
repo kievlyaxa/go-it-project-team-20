@@ -9,8 +9,6 @@
 
 .guarantee-container {
     display: block;
-    position: relative;
-    
     width: 1090px;
     margin-left: auto;
     margin-right: auto;
@@ -42,17 +40,18 @@
     list-style: none;
     margin: 0;
     width: 1090px;
+    position: relative;
      
 }
 
-.guarantee-list::before{
+.guarantee-list:not(:last-child)::before{
     position: absolute;
-    content: "";
+    content: " ";
     display: block;
-    height: 200px;
+    height: 35px;
     border-left: 2px dashed #B9B9B9;
-    left: 11px;
-    top: 98px;
+    margin-top: 75px;
+    left: 10px;
 }
 
 
@@ -84,7 +83,7 @@
 }
 
 .fire{
-    position: relative;
+    
     margin-right: 30px;
     fill: $accent-color;
 }

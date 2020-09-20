@@ -2028,7 +2028,6 @@ body {
 
 .guarantee-container {
   display: block;
-  position: relative;
   width: 1090px;
   margin-left: auto;
   margin-right: auto;
@@ -2056,16 +2055,17 @@ body {
   list-style: none;
   margin: 0;
   width: 1090px;
+  position: relative;
 }
 
-.guarantee-list svg::after {
+.guarantee-list:not(:last-child)::before {
   position: absolute;
-  content: "";
+  content: " ";
   display: block;
   height: 40px;
   border-left: 2px dashed #B9B9B9;
-  left: 11px;
-  top: 98px;
+  margin-top: 80px;
+  left: 10px;
 }
 
 .guarantee-list {
@@ -2097,7 +2097,6 @@ body {
 }
 
 .fire {
-  position: relative;
   margin-right: 30px;
   fill: #ff6b09;
 }
