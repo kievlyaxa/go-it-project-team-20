@@ -488,8 +488,8 @@ body {
 
 .menu-button {
   position: absolute;
-  top: 6.5px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   z-index: 999;
   display: block;
   margin: 0;
@@ -635,10 +635,6 @@ body {
 
 .menu-container.is-open .logo .logo-part-scnd .orange {
   color: #fff;
-}
-
-.menu-container {
-  /* width: 100%; */
 }
 
 .menu-container.is-open {
