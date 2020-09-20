@@ -208,6 +208,7 @@
      }
 }
 
+
 .foto-reviews{
     display: block;
     border-radius: 50%;
@@ -245,23 +246,28 @@
     width:1288px;
     position: absolute;
     top: 50%;
+
     left: 320px;
 
     @media screen  and (max-width:1343px){
         width: 688px;
         left: 0;
+
     }
     
     @media screen and (max-width:767px){
         width: 280px;
         top:96%;
         left: 10px;
+
     }
 }
 
 .arrow-nav{
    display: inline-block;
+
    margin-right: 1208px;
+
    justify-content: space-between;
 
    @media screen  and (max-width:1343px){
@@ -269,7 +275,9 @@
    }
 
    @media screen and (max-width:767px){
+
        margin-right: 220px;
+
    }
 }
 
