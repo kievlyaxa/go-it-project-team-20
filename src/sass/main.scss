@@ -2,15 +2,17 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
 // Стили для файла с примером HTML-фрагмента
 // @import './example';
 @import './base/normalize';
 @import './utils/variables';
 @import './base/general';
+@import './layout/header';
 @import './layout/hero';
+@import './layout/main-problem';
 @import './layout/how-we-do-it';
+@import './layout/our-programm';
+@import './layout/teacher';
+@import './layout/we-garanty';
+@import './layout/reviews';
 @import './layout/footer';
-
-
-
