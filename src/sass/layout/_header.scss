@@ -214,7 +214,6 @@
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.03em;
-    /* text-transform: uppercase; */
     background-color: rgba(17, 21, 24, 0.9);
   }
 
@@ -339,7 +338,7 @@
     color: #fff;
   }
 
-  @media screen and (max-width: 1343px) {
+  @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -350,5 +349,21 @@
     padding: 26.5px 23.5px;
     font-size: 14px;
     line-height: 1.214;
+  }
+
+  .menu-container.is-open & {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.header-button.kostyl {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1343px) {
+    display: none;
   }
 }
