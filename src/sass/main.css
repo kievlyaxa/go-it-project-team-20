@@ -192,9 +192,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -202,9 +202,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -213,9 +213,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -265,8 +265,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -276,8 +276,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -285,7 +285,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -295,7 +295,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -713,7 +713,8 @@ body {
   color: #ff6b09;
 }
 
-.list-navigation-link:hover, .list-navigation-link:focus {
+.list-navigation-link:hover,
+.list-navigation-link:focus {
   color: #ff6b09;
 }
 
@@ -737,7 +738,13 @@ body {
   outline: none;
   color: #ff6b09;
   background-color: transparent;
-  background-image: linear-gradient(to left, transparent, transparent 50%, #ff6b09 50%, #ff6b09);
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    #ff6b09 50%,
+    #ff6b09
+  );
   background-position: 100% 0;
   background-size: 200% 100%;
   font-size: 12px;
@@ -751,7 +758,8 @@ body {
   cursor: pointer;
 }
 
-.header-button:hover, .header-button:focus {
+.header-button:hover,
+.header-button:focus {
   background-position: 0 0;
   color: #fff;
 }
@@ -910,7 +918,13 @@ body {
   outline: none;
   color: #fff;
   background-color: #ff6b09;
-  background-image: linear-gradient(to right, transparent, transparent 50%, #fff 50%, #fff);
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    transparent 50%,
+    #fff 50%,
+    #fff
+  );
   background-position: 0 0%;
   background-size: 200% 100%;
   font-size: 12px;
@@ -924,7 +938,8 @@ body {
   cursor: pointer;
 }
 
-.hero-button:hover, .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-position: 100% 0;
   color: #ff6b09;
 }
@@ -1054,7 +1069,7 @@ body {
   max-width: 1680px;
   height: 560px;
   position: relative;
-  background-image: url("/images/png/black-fire-desktop.png");
+  background-image: url('/images/png/black-fire-desktop.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   margin-bottom: 176px;
@@ -1333,7 +1348,8 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
-  background-image: url("/images/png/our-prog-desktop.png"), linear-gradient(#111518 0%, #111518 1240px, #fff 1240px, #fff 100%);
+  background-image: url('/images/png/our-prog-desktop.png'),
+    linear-gradient(#111518 0%, #111518 1240px, #fff 1240px, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: calc(50% - 504px) 676px, 0 0;
 }
@@ -1342,7 +1358,8 @@ body {
   .our-programm {
     padding-top: 60px;
     padding-bottom: 30px;
-    background-image: url("/images/png/our-prog-tablet.png"), linear-gradient(#111518 0%, #111518 1240px, #fff 1240px, #fff 100%);
+    background-image: url('/images/png/our-prog-tablet.png'),
+      linear-gradient(#111518 0%, #111518 1240px, #fff 1240px, #fff 100%);
     background-position: calc(50% + 192px) 816px, 0 0;
   }
 }
@@ -1350,7 +1367,8 @@ body {
 @media screen and (max-width: 767px) {
   .our-programm {
     padding-top: 50px;
-    background-image: url("/images/png/our-prog-mobile.png"), linear-gradient(#111518 0%, #111518 2036px, #fff 2036px, #fff 100%);
+    background-image: url('/images/png/our-prog-mobile.png'),
+      linear-gradient(#111518 0%, #111518 2036px, #fff 2036px, #fff 100%);
     background-position: calc(50% + 100px) 1455px, 0 0;
   }
 }
@@ -1500,7 +1518,7 @@ body {
 }
 
 .programm-block-item:before {
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1666,13 +1684,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .why-choose-us-item:not(:nth-last-child(-n+3)) {
+  .why-choose-us-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 34px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .why-choose-us-item:not(:nth-last-child(-n+2)) {
+  .why-choose-us-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 28px;
   }
 }
@@ -1801,7 +1819,8 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-Certificate:hover, .link-Certificate:focus {
+.link-Certificate:hover,
+.link-Certificate:focus {
   color: #ff6b09;
 }
 
@@ -1816,7 +1835,7 @@ body {
 
 .guarantee-container {
   position: relative;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .guarantee-title {
@@ -1838,10 +1857,10 @@ body {
 
 .guarantee-description::before {
   position: absolute;
-  content: "";
+  content: '';
   display: block;
   height: 60%;
-  border-left: 1px dashed #B9B9B9;
+  border-left: 1px dashed #b9b9b9;
   left: 63px;
   top: 65px;
 }
@@ -1854,7 +1873,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   width: 1090px;
 }
 
@@ -1878,7 +1897,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 1119px) {
@@ -1965,7 +1984,7 @@ body {
   font-size: 30px;
   line-height: 37px;
   letter-spacing: 0.08em;
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 @media screen and (min-width: 768px) {
@@ -1996,7 +2015,7 @@ body {
   margin-bottom: 0px;
   flex-grow: inherit;
   text-align: start;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
@@ -2028,7 +2047,7 @@ body {
   line-height: 17px;
   letter-spacing: 0.08em;
   white-space: wrap;
-  color: #B9B9B9;
+  color: #b9b9b9;
 }
 
 @media screen and (min-width: 768px) {
@@ -2057,7 +2076,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   white-space: wrap;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 @media screen and (min-width: 768px) {
@@ -2137,7 +2156,7 @@ body {
 }
 
 .icon-arrow {
-  fill: #FF6B09;
+  fill: #ff6b09;
 }
 
 .arrow {
@@ -2229,7 +2248,7 @@ body {
   padding-bottom: 62px;
   padding-left: 295px;
   padding-right: 295px;
-  background-image: url("/images/png/footer-desktop.png");
+  background-image: url('/images/png/footer-desktop.png');
 }
 
 @media screen and (max-width: 768px) {
