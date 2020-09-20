@@ -486,10 +486,16 @@ body {
   }
 }
 
+@media screen and (min-width: 1344px) {
+  .logo.in-menu {
+    display: none;
+  }
+}
+
 .menu-button {
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
   z-index: 999;
   display: block;
   margin: 0;
