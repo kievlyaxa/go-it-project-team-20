@@ -689,6 +689,7 @@ body {
 @media screen and (min-width: 1344px) {
   .menu-container {
     display: flex;
+    width: 1314px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -713,6 +714,13 @@ body {
     width: 688px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-relative {
+    display: flex;
+    padding-top: 0px;
   }
 }
 
@@ -743,6 +751,7 @@ body {
     margin-left: 144px;
     margin-right: 58px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -837,7 +846,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1343px) {
+@media screen and (min-width: 1344px) {
   .header-button.kostyl {
     display: none;
   }
