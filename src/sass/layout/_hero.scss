@@ -216,17 +216,25 @@
   display: flex;
   width: 216px;
 
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
   @media screen and (min-width: 1344px) {
     width: 448px;
   }
 }
 
 .hero-icon {
-  position: absolute;
   width: 59px;
   height: 60px;
 
   @media screen and (min-width: 768px) {
+    position: absolute;
   }
 
   @media screen and (min-width: 1344px) {
@@ -236,12 +244,18 @@
 }
 
 .hero-advantages-title {
-  /* padding-left: 76px; */
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    width: 146px;
+    padding-left: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 69px;
-    margin-top: 0px;
-    margin-bottom: 0px;
   }
 
   @media screen and (min-width: 1344px) {
