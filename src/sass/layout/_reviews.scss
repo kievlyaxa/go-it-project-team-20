@@ -246,23 +246,29 @@
     width:1288px;
     position: absolute;
     top: 50%;
+
     left: 265px;
 
     @media screen  and (max-width:1343px){
         width: 688px;
         left: -20px;
+
     }
     
     @media screen and (max-width:767px){
         width: 280px;
         top:96%;
+
         left: 0;
+
     }
 }
 
 .arrow-nav{
    display: inline-block;
+
    margin-right: 1208px;
+
    justify-content: space-between;
 
    @media screen  and (max-width:1343px){

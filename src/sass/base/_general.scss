@@ -15,15 +15,6 @@ body {
   margin-right: auto;
   // padding-left: 15px;
   // padding-right: 15px;
-
-  @media screen and (max-width: 1199px) {
-    width: calc(688px + 30px);
-  }
-
-  @media screen and (max-width: 767px) {
-    width: calc(280px + 30px);
-
-  }
 }
 
 // главное заглавие сайта (h1)
