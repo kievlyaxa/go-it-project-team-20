@@ -39,8 +39,8 @@
 
 .menu-button {
   position: absolute;
-  top: 6.5px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   z-index: 999;
   display: block;
   margin: 0;
@@ -86,6 +86,9 @@
 }
 
 .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+
   & .link {
     text-decoration: none;
   }
@@ -153,6 +156,13 @@
     }
   }
 
+  .menu-container.is-open & {
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+  }
+
   .menu-container.is-open & .logo-part {
     color: #fff;
     text-transform: none;
@@ -161,26 +171,35 @@
   .menu-container.is-open & .logo-part-scnd {
     color: #fff;
   }
+
+  .menu-container.is-open & .logo-part-scnd .orange {
+    color: #fff;
+  }
 }
 
 .menu-container {
-  width: 100%;
-
   &.is-open {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding-top: 109px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 159px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   @media screen and (max-width: 1343px) {
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
     display: none;
 
-    height: 100vw;
-    padding-top: 29px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100vw;
+    height: 100vh;
 
     font-family: Montserrat;
     font-size: 20px;
@@ -188,14 +207,8 @@
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-color: rgba(17, 21, 24, 0.9);
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 42px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   @media screen and (min-width: 1344px) {
@@ -207,17 +220,28 @@
 }
 
 .header-list-navigation {
+  width: 300px;
   padding-left: 0px;
   margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    /* align-items: center; */
+    width: 330px;
+    text-align: center;
+  }
 
   @media screen and (min-width: 1344px) {
     display: flex;
+    width: 648px;
     align-items: center;
     margin-left: 144px;
-    margin-right: 78px;
+    margin-right: 58px;
+    margin-bottom: 0px;
   }
 }
 
@@ -230,7 +254,6 @@
 .list-navigation-link {
   font-family: Montserrat;
   font-style: normal;
-  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -248,6 +271,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.214;
+    text-transform: uppercase;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #b9b9b9;

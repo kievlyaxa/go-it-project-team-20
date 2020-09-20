@@ -1,6 +1,16 @@
 .hero {
   padding-bottom: 50px;
   background-repeat: no-repeat;
+  background-image: url(../images/hero-background.svg);
+  background-size: 768px 618px;
+  background-position: -30px 0%;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+    background-image: url(../images/hero-background.svg);
+    background-size: contain;
+    background-position: 50% -30px;
+  }
 
   @media screen and (min-width: 1344px) {
     padding-bottom: 130px;
@@ -178,6 +188,7 @@
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 30px;
   list-style: none;
 
   font-family: Montserrat;
@@ -193,6 +204,7 @@
     justify-content: space-between;
     font-size: 14px;
     line-height: 1.43;
+    margin-left: 0px;
   }
 
   @media screen and (min-width: 1344px) {
@@ -201,9 +213,16 @@
   }
 }
 
+.hero-list-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
 .hero-list-item {
-  width: 215px;
   position: relative;
+  display: flex;
+  width: 216px;
 
   @media screen and (min-width: 1344px) {
     width: 448px;
@@ -211,11 +230,11 @@
 }
 
 .hero-icon {
-  position: absolute;
   width: 59px;
   height: 60px;
 
   @media screen and (min-width: 768px) {
+    position: absolute;
   }
 
   @media screen and (min-width: 1344px) {
@@ -225,7 +244,15 @@
 }
 
 .hero-advantages-title {
-  padding-left: 76px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    width: 146px;
+    padding-left: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 69px;
