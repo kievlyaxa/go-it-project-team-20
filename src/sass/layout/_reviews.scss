@@ -12,6 +12,7 @@
   @media screen and (max-width: 767px) {
     min-width: 320px;
     text-align: center;
+
   }
 }
 
@@ -31,6 +32,7 @@
     }
 
     @media screen and (max-width:767px){
+
         font-size: 20px;
     }
 }
@@ -41,15 +43,19 @@
     margin-bottom: 130px;
     padding-left: 0px;
     justify-content: center;
+
     list-style: none;
 
     @media screen and (max-width:1343px) {
+
         margin-top: 30px;
         margin-bottom: 50px;
     }
 
+
     @media screen and (max-width:767px) {
         margin-top: 20px;
+
     }
 }
 
@@ -64,6 +70,7 @@
 
 .reviews-item:last-child{
     margin-right: 0px;
+
 }
 
 .item-title.tonya{
@@ -74,18 +81,22 @@
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.08em;
+
     color: $accent-color;
 
     @media screen and (max-width:1343px){
         margin-top: 40px;
+
         font-size: 20px;
         line-height: 24px;
     }
 
      @media screen and (max-width:767px){
+
          margin-top: 70px;
          font-size: 14px;
          line-height: 17px;
+
      }
 }
 
@@ -95,10 +106,13 @@
     width: 1090px;
     margin-left: auto;
     margin-right: auto;
+
     margin-top: 30px;
+
     text-align: start;
     background: #FFFFFF;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
 
     @media screen and (max-width:1343px){
         width: 688px;
@@ -111,6 +125,7 @@
          padding-right: 20px;
          text-align: center;
      }
+
 }
 
 .text-profession{
@@ -126,16 +141,19 @@
     color: #B9B9B9;
 
     @media screen and (max-width:1343px){
+
         width: 412px;
         margin-top: 20px;
         font-size: 12px;
         line-height: 15px;
     }
 
+
      @media screen and (max-width:767px){
          width: 240px;
          margin-top: 10px;
      }
+
 }
 
 .text-reviews{
@@ -169,6 +187,7 @@
 .information{
     display: block;
     width: 100%;
+
 }
 
 .foto-reviews-first{
@@ -177,6 +196,7 @@
     margin-right: 40px;
     width: 150px;
     height: 150px;
+
 
     @media screen and (max-width:1343px){
         margin-top: 40px;
@@ -194,6 +214,7 @@
     display: block;
     border-radius: 50%;
 }
+    
 
 .icon-vk{
     position: absolute;
@@ -251,6 +272,7 @@
 
 .nav-arrow:last-child{
     margin-right: 0px;
+
 }
 
 .continuation:hover{
@@ -258,8 +280,11 @@
     text-decoration: underline;
 }
 
+
 @media screen and (max-width:767px){
     .reviews-item.hidden{
         display: none;
     }
+
 }
+
