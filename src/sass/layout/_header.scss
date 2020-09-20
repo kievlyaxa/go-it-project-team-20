@@ -193,6 +193,7 @@
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 
     @media screen and (min-width: 768px) {
       padding-top: 159px;
@@ -228,8 +229,10 @@
 .container-relative {
   @media screen and (max-width: 767px) {
     position: relative;
-    width: 100%;
-    padding-top: 109px;
+    width: 280px;
+    padding-top: 78px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
