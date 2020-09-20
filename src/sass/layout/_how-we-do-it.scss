@@ -4,14 +4,19 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: calc(290px + 30px);
+    width: 280px;
   }
 }
 
 .hwdit {
-  margin-bottom: 130px;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (max-width: 1343px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 130px;
+  }
 }
 
 .hwdit-title {
@@ -26,7 +31,7 @@
     font-size: 20px;
     margin-bottom: 30px;
     padding: 0;
-    width: 100%;
+    width: 280px;
     text-align: center;
   }
 
@@ -51,17 +56,6 @@
   padding: 0;
   justify-content: center;
   flex-wrap: wrap;
-
-  // @media screen and (min-width: 1344px) {
-  //   display: flex;
-  //   // justify-content: center;
-    
-  // }
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-    
-  //   // flex-wrap: wrap;
-  // }
 }
 
 .hwdit-list-title {
@@ -100,8 +94,10 @@
 
   @media screen and (max-width: 767px) {
     display: block;
-    align-items: center;
-    width: 290px;
+    // align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     // padding-left: 20px;
     // padding-right: 20px;
     // margin-left: auto;

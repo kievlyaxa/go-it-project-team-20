@@ -1267,7 +1267,7 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
     padding: 0;
-    width: 100%;
+    width: 280px;
     text-align: center;
   }
 }
@@ -1346,10 +1346,9 @@ body {
 @media screen and (max-width: 767px) {
   .hwdit-list-item {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
