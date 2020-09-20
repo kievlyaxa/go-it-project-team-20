@@ -1,54 +1,60 @@
 .main-problem-section {
   background-color: $primary-title-color;
   max-width: 1680px;
-  height: 560px;
-  position: relative;
-  background-image: url('/images/png/black-fire-desktop.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  margin-bottom: 176px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 176px;
+  @media screen and (min-width: 769px) {
+    height: 340px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1344px) {
+    height: 560px;
+    position: relative;
+    background-image: url('/images/png/black-fire-desktop.png');
+    background-repeat: no-repeat;
+    background-position: 125% bottom;
+  }
   & .container {
-    height: 710px;
+    height: 545px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-  }
-  @media screen and (max-width: 1199px) {
-    height: 340px;
-    background-image: none;
-  }
-  @media screen and (max-width: 767px) {
-    height: 545px;
+    width: 100%;
+    @media screen and (min-width: 769px) {
+      height: 340px;
+    }
+    @media screen and (min-width: 1344px) {
+      height: 710px;
+    }
   }
 }
 .main-problem-header {
-  max-width: 860px;
-  font-weight: 800;
-  font-size: 46px;
+  font-size: 20px;
+  max-width: 275px;
+  padding-top: 50px;
+  padding-bottom: 27px;
   line-height: 130%;
+  font-weight: 800;
   letter-spacing: 0.03em;
   color: white;
-  padding-top: 100px;
-  padding-bottom: 70px;
   margin-top: 0px;
   margin-bottom: 0px;
   & span {
     color: $accent-color;
   }
-  @media screen and (max-width: 1199px) {
-    font-size: 26px;
+  @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 25px;
-    width: 480px;
+    max-width: 480px;
+    font-size: 26px;
   }
-  @media screen and (max-width: 767px) {
-    font-size: 20px;
-    width: 275px;
-    padding-top: 50px;
-    padding-bottom: 27px;
+  @media screen and (min-width: 1344px) {
+    max-width: 860px;
+    font-size: 46px;
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 }
 * {
@@ -59,39 +65,43 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.problems-list {
-  list-style: none;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 110px;
+}
+.problems-list {
+  list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
-  @media screen and (max-width: 1199px) {
+  padding-left: 30px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
     padding-left: 96px;
     padding-right: 109px;
     padding-bottom: 26px;
+    padding-top: 0px;
   }
-  @media screen and (max-width: 767px) {
-    padding-left: 30px;
+  @media screen and (min-width: 1344px) {
+    padding-left: 110px;
     padding-right: 0px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 26px;
   }
   & li {
-    padding-top: 70px;
-    padding-bottom: 62px;
-    width: calc((100% - 80px) / 3);
-    margin-right: 40px;
-    &:nth-last-child(-n + 3) {
-      padding-top: 0px;
-      margin-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    width: 688px;
+    &:last-child {
+      padding-bottom: 0px;
+      margin-bottom: 20px;
     }
-    &:nth-child(3n) {
-      margin-right: 0px;
-    }
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       width: calc((100% - 22) / 2);
       width: 220px;
       margin-right: 22px;
@@ -105,37 +115,38 @@
         margin-right: 0px;
       }
     }
-    @media screen and (max-width: 767px) {
-      margin-right: 0px;
+    @media screen and (min-width: 1344px) {
       padding-top: 0px;
-      padding-bottom: 10px;
-      margin-top: 10px;
-      &:last-child {
+      padding-bottom: 62px;
+      width: calc((100% - 80px) / 3);
+      margin-right: 0px;
+      &:nth-last-child(-n + 3) {
         padding-bottom: 0px;
-        margin-bottom: 20px;
       }
     }
+
     & h3 {
       color: $accent-color;
       font-weight: 700;
-      font-size: 20px;
-      line-height: 164.9%;
+      line-height: 24px;
+      font-size: 14px;
       letter-spacing: 0.08em;
       margin-top: 0px;
       margin-bottom: 0px;
-      @media screen and (max-width: 1199px) {
-        line-height: 24px;
-        font-size: 14px;
+      @media screen and (min-width: 1344px) {
+        font-size: 20px;
+        line-height: 164.9%;
       }
     }
     & p {
-      font-size: 20px;
       font-weight: 700;
-      margin-top: 10px;
+      font-size: 14px;
+      margin-top: 5px;
       margin-bottom: 0px;
-      @media screen and (max-width: 1199px) {
-        font-size: 14px;
-        margin-top: 5px;
+      //width: 100%;
+      @media screen and (min-width: 1344px) {
+        font-size: 20px;
+        margin-top: 10px;
       }
     }
   }

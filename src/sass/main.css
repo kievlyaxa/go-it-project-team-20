@@ -485,10 +485,24 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 627px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .logo.kostyl {
+    display: none;
+  }
+}
+
 .menu-button {
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
   z-index: 999;
   display: block;
   margin: 0;
@@ -648,14 +662,15 @@ body {
   top: 0;
   left: 0;
   z-index: 9;
-  padding-top: 109px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
-    padding-top: 159px;
+    padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -672,7 +687,6 @@ body {
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.03em;
-    /* text-transform: uppercase; */
     background-color: rgba(17, 21, 24, 0.9);
   }
 }
@@ -682,9 +696,38 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 1314px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+.container-relative {
+  position: relative;
+  padding-top: 78px;
+}
+
+@media screen and (max-width: 767px) {
+  .container-relative {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .container-relative {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-relative {
+    display: flex;
+    padding-top: 0px;
   }
 }
 
@@ -701,9 +744,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-list-navigation {
-    /* align-items: center; */
     width: 330px;
-    text-align: center;
+    margin-top: 40px;
+    text-align: left;
   }
 }
 
@@ -719,6 +762,7 @@ body {
     margin-left: 144px;
     margin-right: 58px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -787,7 +831,7 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 1343px) {
+@media screen and (max-width: 767px) {
   .header-button {
     margin-left: auto;
     margin-right: auto;
@@ -801,6 +845,24 @@ body {
     padding: 26.5px 23.5px;
     font-size: 14px;
     line-height: 1.214;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container.is-open .header-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-button.kostyl {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .header-button.kostyl {
+    display: none;
   }
 }
 
