@@ -1,74 +1,76 @@
 .reviews{
-    width:100%;
     position: relative;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    background-color: #FFFFFF;
+    background-color:  #FFFFFF;
 
-    @media screen and (max-width: 1199px) {
-    width: calc(688px + 30px);
+    @media screen and (max-width: 1343px) {
+        min-width: 768px;
   }
 
   @media screen and (max-width: 767px) {
-    width: calc(280px + 30px);
+    min-width: 320px;
+    text-align: center;
 
   }
 }
 
 .section-title.reviews{
     padding-top: 130px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
     text-align: center;
 
-    @media screen  and (max-width:1343px){
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        font-weight: 800;
+    @media screen and (max-width:1343px) {
+        padding-top: 50px;
         font-size: 26px;
-        line-height: 130%;
-        letter-spacing: 0.03em;
     }
 
-    @media screen and (max-width:767px) {
-        width: 100%px;
-        margin-bottom: 20px;
+    @media screen and (max-width:767px){
+
         font-size: 20px;
     }
 }
 
 .reviews-list{
     display:flex;
-    padding-left: 0px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    list-style: none;
+    padding-left: 0px;
     justify-content: center;
 
-    @media screen  and (max-width:1343px){
+    list-style: none;
+
+    @media screen and (max-width:1343px) {
+
         margin-top: 30px;
         margin-bottom: 50px;
     }
 
-    @media screen  and (max-width:767px){
+
+    @media screen and (max-width:767px) {
         margin-top: 20px;
-        margin-bottom: 50px;
-        margin-right: 10px;
+
     }
 }
 
 .reviews-item{
     display:flex;
-    margin-top: 40px;
     margin-right: 30px;
 
-    @media screen  and (max-width:767px){
-        margin-right: 10px;
-    }
+     @media screen and (max-width:767px){
+         margin-right: 10px;
+     }
+}
+
+.reviews-item:last-child{
+    margin-right: 0px;
+
 }
 
 .item-title.tonya{
@@ -79,22 +81,22 @@
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.08em;
-    color: #FF6B09;
 
-    @media screen  and (max-width:1343px){
-        width: 356px;
-        margin-top: 40px; 
+    color: $accent-color;
+
+    @media screen and (max-width:1343px){
+        margin-top: 40px;
+
         font-size: 20px;
         line-height: 24px;
     }
 
      @media screen and (max-width:767px){
-       width: 225px;
-       margin-right: 0px;
-       font-size: 14px;
-       line-height: 17px;
-       text-align: center;
-       letter-spacing: 0.08em;
+
+         margin-top: 70px;
+         font-size: 14px;
+         line-height: 17px;
+
      }
 }
 
@@ -104,29 +106,26 @@
     width: 1090px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    flex-grow: inherit;
+
+    margin-top: 30px;
+
     text-align: start;
     background: #FFFFFF;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
-    @media screen  and (max-width:1343px){
+
+    @media screen and (max-width:1343px){
         width: 688px;
     }
 
-    @media screen and (max-width:767px){
-        width: 280px;
-        display: block;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
-}
+     @media screen and (max-width:767px){
+         display: block;
+         width: 280px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: center;
+     }
 
-.information{
-    display: block;
-    width: 100%;
 }
 
 .text-profession{
@@ -139,63 +138,67 @@
     line-height: 17px;
     letter-spacing: 0.08em;
     white-space: wrap;
-
     color: #B9B9B9;
 
-      @media screen  and (max-width:1343px){
+    @media screen and (max-width:1343px){
+
         width: 412px;
         margin-top: 20px;
         font-size: 12px;
         line-height: 15px;
     }
 
-    @media screen  and (max-width:767px){
-        width: 240px;
-        margin-top: 10px;
-        margin-right: 0px;
-    }
+
+     @media screen and (max-width:767px){
+         width: 240px;
+         margin-top: 10px;
+     }
+
 }
 
 .text-reviews{
     display: block;
     width: 706px;
     margin-top: 20px;
-    margin-right: 0px;
     margin-bottom: 51px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: Montserrat;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
     white-space: wrap;
-    text-align: start;
     color: #3D3D3D;
 
-      @media screen  and (max-width:1343px){
+    @media screen and (max-width:1343px){
         width: 412px;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 12px;
         line-height: 20px;
     }
 
-    @media screen  and (max-width:767px){
-        width: 240px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        text-align: center;
-    }
+     @media screen and (max-width:767px){
+         width: 240px;
+         margin-top: 10px;
+         margin-bottom: 30px;
+     }
+}
+
+.information{
+    display: block;
+    width: 100%;
+
 }
 
 .foto-reviews-first{
-    position: relative;
     margin-top: 50px;
     margin-left: 82px;
     margin-right: 40px;
     width: 150px;
     height: 150px;
 
-      @media screen  and (max-width:1343px){
+
+    @media screen and (max-width:1343px){
         margin-top: 40px;
         margin-left: 40px;
     }
@@ -204,95 +207,84 @@
          width: 90px;
          height: 90px;
          margin-top: 20px;
-         margin-left: 0px;
      }
 }
-
 
 .foto-reviews{
     display: block;
     border-radius: 50%;
 }
-
-.continuation:hover{
-    text-decoration: underline;
-    color: $accent-color;
-}
+    
 
 .icon-vk{
-    display: block;
     position: absolute;
-    top:226px;
-    left:142px;
-    fill:#436eab;
-    z-index: 100;
+    top:240px;
+    left: 135px;
+    fill: #436EAB;
 
-    @media screen  and (max-width:1343px){
-        left:100px;
+    @media screen and (max-width:1343px){
+        top:220px;
+        left: 90px;
     }
 
-    @media screen  and (max-width:767px){
-        top:130px;
-        left: 110px;
-    }
+     @media screen and (max-width:767px){
+         top:130px;
+         left: 120px;
+     }
 }
 
 .icon-arrow{
-    fill: #FF6B09;
+    width: 25px;
+    height: auto;
+    fill: $accent-color;
 }
 
 .arrow{
-    display: flex;
-    width:1288px;
     position: absolute;
-    top: 50%;
+    top: 45%;
+    left: 30px;
+    width: 1250px;
+    justify-content: center;
 
-    left: 320px;
-
-    @media screen  and (max-width:1343px){
-        width: 688px;
-        left: 0;
-
+    @media screen and (max-width:1343px){
+        width: 700px;
     }
-    
-    @media screen and (max-width:767px){
-        width: 280px;
-        top:96%;
-        left: 10px;
 
-    }
+     @media screen and (max-width:767px){
+         width: 230px;
+         top: 87%;
+         left: 40px;
+     }
 }
 
-.arrow-nav{
-   display: inline-block;
+.nav-arrow{
+    display: inline-block;
+    margin-right: 1150px;
 
-   margin-right: 1208px;
+    @media screen and (max-width:1343px){
+        margin-right: 640px;
+    }
 
-   justify-content: space-between;
-
-   @media screen  and (max-width:1343px){
-       margin-right: 675px;
-   }
-
-   @media screen and (max-width:767px){
-
-       margin-right: 220px;
-
-   }
+     @media screen and (max-width:767px){
+         margin-right: 175px;
+     }
 }
 
-.arrow-nav:last-child{
+.nav-arrow:last-child{
     margin-right: 0px;
+
 }
+
+.continuation:hover{
+    color: $accent-color;
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width:767px){
     .reviews-item.hidden{
         display: none;
     }
+
 }
 
-@media screen  and (max-width:767px){
-    .reviews-item:last-child{
-        margin-right: 0px;
-    }
-}
