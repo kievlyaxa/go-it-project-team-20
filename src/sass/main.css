@@ -1243,14 +1243,25 @@ body {
 
 @media screen and (max-width: 767px) {
   .container.media {
-    width: calc(290px + 30px);
+    width: 280px;
   }
 }
 
 .hwdit {
-  margin-bottom: 130px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 1343px) {
+  .hwdit {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .hwdit {
+    margin-bottom: 130px;
+  }
 }
 
 .hwdit-title {
@@ -2007,7 +2018,7 @@ body {
 }
 
 .reviews {
-  width: 1344px;
+  width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -2015,7 +2026,7 @@ body {
   background-color: #FFFFFF;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .reviews {
     width: calc(688px + 30px);
   }
@@ -2033,9 +2044,9 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .section-title.reviews {
-    width: 688px;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 30px;
     font-weight: 800;
@@ -2047,8 +2058,9 @@ body {
 
 @media screen and (max-width: 767px) {
   .section-title.reviews {
-    width: 280px;
+    width: 100%px;
     margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 
@@ -2069,7 +2081,7 @@ body {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .reviews-list {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -2109,7 +2121,7 @@ body {
   color: #FF6B09;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .item-title.tonya {
     width: 356px;
     margin-top: 40px;
@@ -2120,6 +2132,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .item-title.tonya {
+    width: 225px;
+    margin-right: 0px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -2146,7 +2160,7 @@ body {
           box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .reviews-item.first {
     width: 688px;
   }
@@ -2156,12 +2170,15 @@ body {
   .reviews-item.first {
     width: 280px;
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
   }
 }
 
 .information {
   display: block;
+  width: 100%;
 }
 
 .text-profession {
@@ -2177,7 +2194,7 @@ body {
   color: #B9B9B9;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .text-profession {
     width: 412px;
     margin-top: 20px;
@@ -2188,8 +2205,9 @@ body {
 
 @media screen and (max-width: 767px) {
   .text-profession {
-    width: 225px;
+    width: 240px;
     margin-top: 10px;
+    margin-right: 0px;
   }
 }
 
@@ -2197,16 +2215,18 @@ body {
   display: block;
   width: 706px;
   margin-top: 20px;
+  margin-right: 0px;
   margin-bottom: 51px;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   white-space: wrap;
+  text-align: start;
   color: #3D3D3D;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .text-reviews {
     width: 412px;
     margin-top: 30px;
@@ -2221,6 +2241,7 @@ body {
     width: 240px;
     margin-top: 10px;
     margin-bottom: 30px;
+    margin-right: 0px;
     text-align: center;
   }
 }
@@ -2234,7 +2255,7 @@ body {
   height: 150px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .foto-reviews-first {
     margin-top: 40px;
     margin-left: 40px;
@@ -2269,7 +2290,7 @@ body {
   z-index: 100;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1343px) {
   .icon-vk {
     left: 100px;
   }
@@ -2293,10 +2314,10 @@ body {
   width: 1288px;
   position: absolute;
   top: 50%;
-  left: 150px;
+  left: 100px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1343px) {
   .arrow {
     width: 688px;
     left: 0;
@@ -2312,13 +2333,13 @@ body {
 
 .arrow-nav {
   display: inline-block;
-  margin-right: 1208px;
+  margin-right: 1150px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1343px) {
   .arrow-nav {
     margin-right: 675px;
   }
@@ -2593,12 +2614,47 @@ body {
   }
 }
 
-
-@media screen and (max-width: 320px) {
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.logo {
+  /*.logo {
+    
+    .link {
+        text-decoration: none;
+    }
+    
+    .parts {
+        display: flex;
+        align-items: center;
+        .footer-icon {
+            fill:#FF6B09;
+            width: 22px;
+            height: 30px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        .logo-part {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 26px;
+            letter-spacing: 0.04em;
+    
+            color: #111518;
+    
+            margin: 0;
+        }
+    }
+    .logo-part-scnd {
+        width: 125px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin: 0;
+        color: #111518;
+    }
+} */
 }
 
 .logo .link {
