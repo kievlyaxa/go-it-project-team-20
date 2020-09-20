@@ -997,6 +997,7 @@ body {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 30px;
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
@@ -1012,6 +1013,7 @@ body {
     justify-content: space-between;
     font-size: 14px;
     line-height: 1.43;
+    margin-left: 0px;
   }
 }
 
@@ -1022,20 +1024,16 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 .hero-list-item {
   position: relative;
   display: flex;
   width: 216px;
-}
-
-.hero-list-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-list-item {
-    margin-bottom: 0px;
-  }
 }
 
 @media screen and (min-width: 1344px) {
@@ -1077,6 +1075,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero-advantages-title {
     padding-left: 69px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
