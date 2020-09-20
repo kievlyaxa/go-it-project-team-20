@@ -745,6 +745,12 @@ body {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .logo .link {
   text-decoration: none;
 }
