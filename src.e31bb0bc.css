@@ -628,7 +628,7 @@ body {
   .menu-container {
     display: none;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-family: Montserrat;
     font-size: 20px;
     line-height: 1.8;
@@ -666,7 +666,7 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1344px) {
   .container-relative {
     display: flex;
     padding-top: 0px;
@@ -801,16 +801,14 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     padding-bottom: 80px;
-    background-image: url(/hero-background.102dcfd9.svg);
-    background-size: contain;
-    background-position: 50% -30px;
+    background-size: cover;
+    background-position: 50% -150px;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero {
     padding-bottom: 130px;
-    background-image: url(/hero-background.102dcfd9.svg);
-    background-position: 50% -255px;
+    background-position: 50% -400px;
   }
 }
 
